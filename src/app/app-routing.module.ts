@@ -12,9 +12,9 @@ import { EditingUserComponent } from './editing-user/editing-user.component';
 
 // определение маршрутов
 const routes: Routes = [
-  { path: '', component: AuthorizationModule },
-  { path: 'list', component: ListOfUsersModule },
-  { path: 'edit', component: EditingUserModule },
+  { path: '', component: AuthorizationComponent },
+  { path: 'list', component: ListOfUsersComponent },
+  { path: 'edit', component: EditingUserComponent },
   { path: '**', redirectTo: '/' }
 ];
 
