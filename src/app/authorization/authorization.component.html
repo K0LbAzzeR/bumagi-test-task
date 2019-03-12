@@ -1,6 +1,6 @@
 <div class="authorization">
   <div class="groupe">
-    <form [formGroup]="authorizationForm" (submit)="submit()" novalidate>
+    <form [formGroup]="authorizationForm" (submit)="submit(login, pass)" novalidate>
       <mat-form-field class="inputLogin">
         <input matInput formControlName="login" placeholder="Login">
       </mat-form-field>

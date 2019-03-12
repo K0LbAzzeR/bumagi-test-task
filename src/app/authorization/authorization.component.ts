@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
+import { AuthorizationService } from 'src/app/_service/authorization.service';
+
 @Component({
   selector: 'app-authorization',
   templateUrl: './authorization.component.html',
-  styleUrls: ['./authorization.component.scss']
+  styleUrls: ['./authorization.component.scss'],
+  providers: [AuthorizationService]
 })
 export class AuthorizationComponent implements OnInit {
 
@@ -13,13 +16,17 @@ export class AuthorizationComponent implements OnInit {
     pass: new FormControl(),
   });
 
-  constructor() { }
+  constructor(private authorizationService: AuthorizationService) { }
 
   ngOnInit() {
   }
 
-  submit() {
-    console.log(this.authorizationForm.value.login);
-    console.log(this.authorizationForm.value.pass);
+  submit(login: string, password: string) {
+    console.log(this.authorizationForm);
+    console.log(login);
+    console.log(password);
+    // this.
+    // getResponseFromService
+    // console.log(this.authorizationForm.value.pass);
    }
 }
