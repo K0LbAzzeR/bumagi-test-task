@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
-import { CustomMaterialModule } from './custom-material/custom-material.module';
+// import { CustomMaterialModule } from './custom-material/custom-material.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { CustomMaterialModule } from './custom-material/custom-material.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    CustomMaterialModule,
+    // CustomMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

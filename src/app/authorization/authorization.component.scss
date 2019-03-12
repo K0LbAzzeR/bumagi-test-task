@@ -1,15 +1,31 @@
 /* Desktop */
 .authorization {
-  position: relative;
+  display: flex;
+  justify-content: center;
   width: 1440px;
   height: 1024px;
   background: lightgray;
 
   .groupe {
-    position: absolute;
     width: 240px;
     height: 192px;
-    left: 600px;
-    top: 416px;
+    margin-top: 416px;
+    background: gray;
+
+    .inputLogin {
+      width: 240px;
+      height: 48px;
+    }
+
+    .inputPass {
+      width: 240px;
+      height: 48px;
+    }
+
+    .submitButton {
+      width: 240px;
+      height: 48px;
+      background: gray;
+    }
   }
 }
