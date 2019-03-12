@@ -12,4 +12,4 @@ import {
     MatButtonModule
   ]
 })
-export class CustomMaterialModuleModule { }
+export class CustomMaterialModule { }
